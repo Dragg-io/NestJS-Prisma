@@ -8,6 +8,8 @@ interface UserSchema {
   createdAt: Date;
 }
 
+//TODO: Por mais idiota que seja: Pra que servem Getters e Setters????
+
 export class User {
   private props: UserSchema;
   private _id: string;

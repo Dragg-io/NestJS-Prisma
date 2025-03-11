@@ -8,7 +8,8 @@ interface CreateUserRequest {
   password: string;
   name: string;
 }
-
+// Isso permite que a classe "CreateUserUseCase" seja injetável
+//TODO: Injeção de dependência, estudar
 @Injectable()
 export class CreateUserUseCase {
   constructor(private userRepository: UserRepository) {}
